@@ -1,5 +1,5 @@
 # Crypt
-Encrypt your files using a algorithm base on SHA-512. 
+Encrypt your files using an algorithm base on SHA-512. 
 
 It adds the extension .crypt to the files when encrypting and removes after recovering the file.
 It should be used in terminal. 
