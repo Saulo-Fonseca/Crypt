@@ -3,8 +3,8 @@
 # Description: Encrypt/decrypt a file using SHA512 and own algorithm
 
 use Digest::SHA "sha512";	# Load hash module
-use Term::ReadKey;			# Load keymode module
-use POSIX;					# Floor; Strftime
+use Term::ReadKey;		# Load keymode module
+use POSIX;			# Floor; Strftime
 
 # Test argument
 if (@ARGV != 1)
@@ -66,9 +66,9 @@ my $sofar = 0;
 my $lastperc = -1;
 while(sysread(SOURCE,$byte,1))
 {
-	my $byteOrd = ord($byte);					# Get ASCII value of file
+	my $byteOrd = ord($byte);			# Get ASCII value of file
 	my $hashOrd = ord(substr($hash,$count,1));	# Get ASCII value of hash
-	my $xor = $byteOrd ^ $hashOrd;				# XOR both
+	my $xor = $byteOrd ^ $hashOrd;			# XOR both
 	print DESTINATION chr($xor);
 	$count++;
 	$sofar++;
