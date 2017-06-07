@@ -1,2 +1,6 @@
 # Crypt
-Encrypt your files
+Encrypt your files using a algorithm base on SHA-512. 
+
+It adds the extension .crypt to the files when encrypting and removes after recovering the file.
+It should be used in terminal. 
+This program uses the same algorithm as its brother Kryptonite.
